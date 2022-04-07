@@ -1,31 +1,38 @@
 # Simple ToDo App
 Aplikasi ToDo sederhana yang dikembangkan menggunakan Framework Adonis JS.
 
-## Cara Instalasi
-Berikut merupakan cara instalasi aplikasi ToDo.
 
+## Cara Instalasi
+- Berikut merupakan cara instalasi aplikasi ToDo. Setelah clone, jalankan perintah berikut.
 ```bash
 npm install
 ```
-Apabila belum meng-install MySQL, jalankan perintah berikut.
+- Copy file .env.example dan kemudian rename file hasil copy menjadi .env
+
+- Sesuaikan koneksi database pada file .env
+
+- Generate App Key menggunakan perintah berikut
+```bash
+adonis key:generate
+```
+
+- Kemudian, apabila belum meng-install MySQL, jalankan perintah berikut.
 ```bash
 npm install mysql --save
 ```
-Selajutnya jalankan migration dengan perintah berikut.
+
+- Selajutnya jalankan migration dengan perintah berikut.
 ```bash
 adonis migration:run
 ```
-Jika sudah selesau, jalankan perintah berikut.
+
+- Jika sudah selesai, jalankan perintah berikut.
 ```bash
 adonis serve --dev
 ```
-Setelah berhasil dijalankan, buka alamat [http://localhost:3333](http://localhost:3333) pada browser.
+- Setelah berhasil dijalankan, buka alamat [http://localhost:3333](http://localhost:3333) pada browser.
 
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## Lisensi
 [MIT](https://choosealicense.com/licenses/mit/)
